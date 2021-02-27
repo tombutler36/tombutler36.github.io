@@ -579,29 +579,45 @@ body{
     text-align: center;
 }
 
-.subHeadingLine h1{
-    font-size: 3rem;
-    font-weight: bolder;
-    padding-top: 1.5rem;
-    margin-top: 3rem;
-}
 
-.subHeadingLine h1 {
+
+
+
+
+
+@media (min-width: 992px){
+    .subHeadingLine h1{
+        font-size: 3rem;
+        font-weight: bolder;
+        padding-top: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .subHeadingLine h1 {
     text-align:center;
     display: grid;
     grid-template-columns: 200px max-content 200px;
     grid-template-rows: 25px 0;
     grid-gap: 25px;
     justify-content:center;
-}
-    
-.subHeadingLine h1:after, .subHeadingLine h1:before {
-    content: " ";
-    display: block;
-    border-bottom: 2px solid black;
+    }
+
+    .subHeadingLine h1:after, .subHeadingLine h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 2px solid black;
+    }
 }
 
-
+@media (max-width: 991px){
+    .subHeadingLine h1{
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        font-weight: bolder;
+        padding-top: 1.5rem;
+        
+    }
+}
 
 #highlights{
     justify-content: space-evenly;
