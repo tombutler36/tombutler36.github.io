@@ -126,11 +126,12 @@ body{
     
     .nav-link{
         text-align: center;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgb(104, 104, 104);
+        padding: 1rem 0;
     }
 
     .nav-link:nth-child(1){
-        border-top: 1px solid white;
+        border-top: 1px solid rgb(104, 104, 104);
     }
 
 }
@@ -945,7 +946,7 @@ body{
 }
 
 #aboutResumeButton{
-    background-color: none;
+    background-color: transparent;
     color: var(--accentColor);
     border: 2px solid var(--accentColor);
     font-size: 1.5rem;
@@ -960,6 +961,12 @@ body{
 
 }
 
+@media (max-width: 992px){
+    #aboutResumeButton, #nextPageBtn{
+        background-color: var(--accentColor);
+        color: white;
+    }
+}
 
 
 
